@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
     service: 'gmail', // Replace with your email service. Since my email is gmail, 'gmail' is what I'll use
     auth: {
-        user: 'cjbe509@gmail.com', // replace with your email
-        pass: 'dkco anbs tdid hnyg' // replace with your email password
+        user: 'something123@gmail.com', // replace with your email
+        pass: 'sample password' // replace with your email password
             /** Note: If you are using gmail, follow these instructions to generate a password:
                     1. Sign in your Google Account and go to App passwords 
                     2. Verify your identity
@@ -31,7 +31,7 @@ app.post('/send-inquiry', (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: 'cjbe509@gmail.com', // Replace with your email
+        to: 'something123@gmail.com', // Replace with your email
         subject: 'Shop Inquiry',
         text: message,
         replyTo: email
