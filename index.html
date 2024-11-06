@@ -10,9 +10,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Marcellus&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/css/all.min.css">
 	<link rel="stylesheet" href="js/simple-lightbox.css">
-	<link rel="stylesheet" href="stylesheets/style-global.css">
-	<link rel="stylesheet" href="stylesheets/style.css">
-	<link rel="stylesheet" href="stylesheets/style-responsive.css">
+	<link rel="stylesheet" href="style-global.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style-responsive.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/simple-lightbox.js"></script>
@@ -39,19 +39,19 @@
 				<a href="javascript:void();" class="hidemenu"><i class="fa-solid fa-times"></i></a>
 				<nav id="mainmenu">
 					<ul>
-						<li><a href="#home">Home</a></li>
+						<li class="active"><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#portfolio">Services</a></li>
-						<li class="active"><a href="#contact">Contact</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 
 
 			<div class="social">
-				<a href="#"><i class="fa-brands fa-facebook"></i></a>
-				<a href="#"><i class="fa-brands fa-telegram"></i></a>
-				<a href="#"><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://www.facebook.com/profile.php?id=61561472634936" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://mail.google.com/mail/?view=cm&fs=1&to=yamzcomputerz@gmail.com&su=Feedback&body=Hello%20Yamz%20Computer%20Solutions%20Team," target="_blank">
+				<i class="fas fa-envelope"></i></a>
 			</div>
 
 
@@ -102,7 +102,14 @@
 		<div class="content">
 			<div class="about-text">
 				<h3>Welcome to Yamz Computer Solutions, your trusted partner for all things tech. Based in Iligan City, Philippines, we offer services such as computer and mobile repair, sales, system development, and more!</h3>
-			</div>
+				<br>
+				<h4 style="flex: 1;">
+					<i class="fas fa-map-marker-alt" style="color: maroon;"></i>
+					<a href="https://maps.app.goo.gl/U2K9WALbfKWe12MG9" target="_blank" style="text-decoration: none; color: inherit;">
+							Gen Aguinaldo St, Poblacion, Iligan City, 9200 Lanao del Norte
+					</a>
+			</h4>
+						</div>
 			<div class="about-image">
 					<img src="images/yamz_store.jpg" alt="About Image">
 			</div>
@@ -125,54 +132,54 @@
 			<div class="port-items">
 				
 				<div class="item">
-					<img src="images/sales.jpg" alt="" title="Jaguar in Forest" /></a>
+					<img src="images/comp_repair.jpg" alt="" title="" /></a>
 					<h4 class="item-text">PC Repair & Upgrades</h4>
 				</div>
 				<!--1-->
 
 				<div class="item">
-				 <img src="images/mobile.jpg" alt="" title="Beautiful Cityscape" /></a>
+				 <img src="images/print.jpg" alt="" title="" /></a>
 					<h4 class="item-text">Printing/Photocopying Services</h4>
 				</div>
 				<!--2-->
 
 
 				<div class="item">
-					<img src="images/repair.jpg" alt="" title="Amazing House Pillars" /></a>
+					<img src="images/repair.jpg" alt="" title="" /></a>
 					<h4 class="item-text">Laptop/Mobile Repairs</h4>
 				</div>
 				<!--3-->
 
 
 				<div class="item">
-					<img src="images/sysdev.jpg" alt="" title="Yellow Taxi on the Bridge" /></a>
+					<img src="images/burning.jpg" alt="" title="" /></a>
 					<h4 class="item-text">CD/DVD Burning</h4>
 				</div>
 				<!--4-->
 
 
 				<div class="item">
-					<img src="images/sysdev.jpg" alt="" title="Jiraffe in forest" /></a>
+					<img src="images/sysdev.jpg" alt="" title="" /></a>
 					<h4 class="item-text">System Development</h4>
 				</div>
 				<!--5-->
 
 				<div class="item">
-					<img src="images/repair.jpg" alt="" title="Duck in the lake" /></a>
+					<img src="images/install.png" alt="" title="" /></a>
 				  <h4 class="item-text">System Formatting/Installation</h4>
 				</div>
 				<!--6-->
 
 
 				<div class="item">
-					<img src="images/mobile.jpg" alt="" title="Boat in the lake" /></a>
+					<img src="images/software.jpg" alt="" title="" /></a>
 					<h4 class="item-text">Software Upgrades</h4>
 				</div>
 				<!--7-->
 
 
 				<div class="item">
-					<img src="images/sales.jpg" alt="" title="Gold Plated Windows" /></a>
+					<img src="images/sales.jpg" alt="" title="" /></a>
 					<h4 class="item-text">Sales & Other Services</h4>
 				</div>
 				<!--8-->
@@ -198,12 +205,12 @@
 
 	<!-- CONTACT HEADING -->
 	<section class="contact" id="contact">
-		<div class="contact-heading-container">
-			<h2 class="contact-heading">Contact Us</h2>
-			<div class="underline"></div>
-		</div>
+    <div class="contact-heading-container">
+        <h2 class="contact-heading">Contact Us</h2>
+        <div class="underline"></div>
+    </div>
 
-		<div class="container">
+    <div class="container">
 			<div class="contact-form">
 				<form id="feedback-form">
 					<label for="email">Your Email:</label>
@@ -215,17 +222,25 @@
 					<button type="submit">Submit</button>
 				</form>
 			</div>
-			
-			<div class="contact-details">
-				<h3>Get in Touch</h3>
-				<div class="contact-info">
-					<p><i class="fas fa-envelope"></i> <a href="mailto:info@yamzcomputersolutions.com">info@yamzcomputersolutions.com</a></p>
-					<p><i class="fas fa-phone-alt"></i> <a href="tel:0123456789">(012) 345-6789</a></p>
-					<p><i class="fas fa-map-marker-alt"></i> Iligan City, Lanao Del Norte</p>
-				</div>
-			</div>
-		</div>
-	</section>
+        
+        <div class="contact-details">
+            <h3>Get in Touch</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yamzcomputerz@gmail.com&su=Feedback&body=Hello%20Yamz%20Computer%20Solutions%20Team," target="_blank">yamzcomputerz@gmail.com</a></p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:09753094719">(+63) 9753094719</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Gen Aguinaldo St, Poblacion, Iligan City, 9200 Lanao del Norte</p>
+            </div>
+						<div class="map-container">
+							<iframe 
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.1875110694236!2d124.24095049999998!3d8.2278722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x325575e03455668f%3A0x6ffd0e3736cb1ea!2sPhilippine%20Charity%20Sweepstakes%20Office!5e0!3m2!1sen!2sph!4v1730846017528!5m2!1sen!2sph" 
+								width="100%" height="300" style="border:0;" 
+								allowfullscreen="" loading="lazy" 
+								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+						</div>
+        </div>
+    </div>
+</section>
 
 
 	<!-- CONTACT -->
@@ -233,17 +248,22 @@
 
 	<footer>
 		<div class="container flex-sb-aic">
+			
+
 			<div class="copyright">Copyright &copy; <span id="year"></span> <a href="#">Yamz Computerz</a></div>
+
 			<div class="link">
-				<a href="#home" class="gotoup scroll"> Go to Top <i class="fa-solid fa-circle-arrow-up"></i></a>
+				<a href="#home" class="gotoup scroll">Go to Top <i class="fa-solid fa-circle-arrow-up"></i></a>
 			</div>
+
 		</div>
 	</footer>
 	<!-- FOOTER -->
 
-
-
 	<script src="contact.js"></script>
 	<script src="script.js"></script>
+
+
+
 </body>
 </html>
